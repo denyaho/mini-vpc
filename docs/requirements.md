@@ -19,7 +19,10 @@ version1
 ## Non-Functional Requirements
 
 1. support idempotency(never create duplicate VPC)
-2. 
+2. support consistency (if fails, the VPC never created)
+3. Provide useful error messages
+4. Provide IP address conflicts
+
 ## Out of Scope (version 1)
 1. Multi-host networking
 2. VXLAN and EVPN
