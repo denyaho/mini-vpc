@@ -9,6 +9,7 @@ import (
 )
 
 func createNamespace(name string) error {
+	// Lock the OS thread so that namespace changes only affect this thread
 	runtime.LockOSThread()
 	defer runtime.UnlockOSThread()
 
